@@ -1,10 +1,9 @@
-(ns ring-playground.core)
+(ns ring-playground.core
+  (:use ring.adapter.jetty))
 
 (defn handler [request] {:status 200
                          :headers {"Content-Type" "text/html"}
-                         :body "Hello World"})
+                         :body "Hello world"})
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+#_{:clj-kondo/ignore [:unresolved-symbol]}
+(run-jetty handler {:port 8080})
