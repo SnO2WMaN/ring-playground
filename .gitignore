@@ -13,10 +13,12 @@ pom.xml.asc
 .hg/
 
 # lsp
-.lsp/
+.lsp/.cache
 
 # calva
 .calva/
 
 # clj-kondo
-.clj-kondo/
+.clj-kondo/.cache/
+.clj-kondo/clj-kondo
+.clj-kondo/rewrite-clj
